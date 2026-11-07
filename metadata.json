@@ -1,0 +1,6 @@
+{
+  "name": "Melinda's Home Bakery",
+  "description": "Small-batch, homemade cake pops baked fresh with care right out of Melinda's home kitchen. Easy porch pickup and local celebration orders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
