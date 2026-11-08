@@ -1,10 +1,27 @@
 @import "tailwindcss";
 
+:root {
+  --farmhouse-bg: #f7f1ea;
+  --farmhouse-card: #fffdf9;
+  --farmhouse-panel: #f1e9df;
+  --farmhouse-sage: #dfe8d5;
+  --farmhouse-sage-strong: #697c62;
+  --farmhouse-moss: #435542;
+  --farmhouse-terracotta: #be6d4d;
+  --farmhouse-clay: #d9a37c;
+  --farmhouse-ink: #2f2a28;
+  --farmhouse-muted: #625a56;
+  --farmhouse-border: rgba(47, 42, 40, 0.12);
+  --farmhouse-warm: #efe2d1;
+}
+
 @layer base {
   body {
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-    color: #183b3a;
-    background-color: #f3f7f4;
+    color: var(--farmhouse-ink);
+    background-color: var(--farmhouse-bg);
+    background-image: radial-gradient(ellipse at top left, rgba(199, 219, 187, 0.46), transparent 30%),
+      radial-gradient(ellipse at bottom right, rgba(232, 190, 161, 0.22), transparent 28%);
   }
 
   h1, h2, h3, .font-serif-bakery {
@@ -12,35 +29,28 @@
   }
 }
 
-/* A fresh garden-party palette: deep teal, sea-glass, and warm coral. */
-body {
-  background-image: radial-gradient(ellipse at 8% 0%, rgba(196, 226, 216, .38), transparent 35%),
-    radial-gradient(ellipse at 95% 35%, rgba(245, 196, 177, .18), transparent 32%);
-  color: #183b3a;
-}
-
 #box-builder {
   display: none !important;
 }
 
 [class*="bg-[#FAF6F0]"], [class*="bg-[#FFFDF9]"], [class*="bg-[#FAF4ED]"], [class*="bg-[#F8F3EC]"] {
-  background-color: #f3f7f4 !important;
+  background-color: var(--farmhouse-card) !important;
 }
 [class*="bg-[#4A3228]"], [class*="bg-[#5B3E31]"], [class*="bg-[#422D24]"] {
-  background-color: #174c4b !important;
+  background-color: var(--farmhouse-moss) !important;
 }
-[class*="hover:bg-[#38241C]"]:hover { background-color: #103c3b !important; }
-[class*="bg-[#C25E38]"] { background-color: #d66b55 !important; }
-[class*="hover:bg-[#A94C29]"]:hover { background-color: #bd5544 !important; }
-[class*="text-[#382923]"], [class*="text-[#4A3228]"] { color: #183b3a !important; }
+[class*="hover:bg-[#38241C]"]:hover { background-color: #2b4338 !important; }
+[class*="bg-[#C25E38]"] { background-color: var(--farmhouse-terracotta) !important; }
+[class*="hover:bg-[#A94C29]"]:hover { background-color: #a85e46 !important; }
+[class*="text-[#382923]"], [class*="text-[#4A3228]"] { color: var(--farmhouse-ink) !important; }
 [class*="text-[#FFFDF9]"] { color: #ffffff !important; }
-[class*="border-amber"] { border-color: rgba(23, 76, 75, .16) !important; }
-[class*="bg-amber-100"], [class*="bg-amber-200"] { background-color: #dceee8 !important; }
-[class*="bg-amber-50"] { background-color: #eef6f2 !important; }
-[class*="text-amber-800"], [class*="text-amber-900"], [class*="text-amber-700"] { color: #23615d !important; }
-[class*="text-amber-200"], [class*="text-amber-300"] { color: #f6d2c4 !important; }
-[class*="bg-orange-200"] { background-color: #f5d0c3 !important; }
-[class*="bg-orange-100"] { background-color: #fbe9e2 !important; }
-[class*="text-orange-800"] { color: #a64e43 !important; }
-[class*="bg-emerald-100"] { background-color: #dceee8 !important; }
-[class*="text-emerald-800"], [class*="text-emerald-700"] { color: #23615d !important; }
+[class*="border-amber"] { border-color: rgba(67, 85, 66, 0.14) !important; }
+[class*="bg-amber-100"], [class*="bg-amber-200"] { background-color: var(--farmhouse-sage) !important; }
+[class*="bg-amber-50"] { background-color: #f8f2ea !important; }
+[class*="text-amber-800"], [class*="text-amber-900"], [class*="text-amber-700"] { color: var(--farmhouse-sage-strong) !important; }
+[class*="text-amber-200"], [class*="text-amber-300"] { color: #f9e4d0 !important; }
+[class*="bg-orange-200"] { background-color: #efd3bf !important; }
+[class*="bg-orange-100"] { background-color: #f7e8d7 !important; }
+[class*="text-orange-800"] { color: #9d5f44 !important; }
+[class*="bg-emerald-100"] { background-color: var(--farmhouse-sage) !important; }
+[class*="text-emerald-800"], [class*="text-emerald-700"] { color: var(--farmhouse-sage-strong) !important; }
