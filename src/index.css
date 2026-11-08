@@ -3,11 +3,44 @@
 @layer base {
   body {
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-    color: #382923;
-    background-color: #FAF6F0;
+    color: #183b3a;
+    background-color: #f3f7f4;
   }
-  
+
   h1, h2, h3, .font-serif-bakery {
     font-family: 'Fraunces', Georgia, serif;
   }
 }
+
+/* A fresh garden-party palette: deep teal, sea-glass, and warm coral. */
+body {
+  background-image: radial-gradient(ellipse at 8% 0%, rgba(196, 226, 216, .38), transparent 35%),
+    radial-gradient(ellipse at 95% 35%, rgba(245, 196, 177, .18), transparent 32%);
+  color: #183b3a;
+}
+
+#box-builder {
+  display: none !important;
+}
+
+[class*="bg-[#FAF6F0]"], [class*="bg-[#FFFDF9]"], [class*="bg-[#FAF4ED]"], [class*="bg-[#F8F3EC]"] {
+  background-color: #f3f7f4 !important;
+}
+[class*="bg-[#4A3228]"], [class*="bg-[#5B3E31]"], [class*="bg-[#422D24]"] {
+  background-color: #174c4b !important;
+}
+[class*="hover:bg-[#38241C]"]:hover { background-color: #103c3b !important; }
+[class*="bg-[#C25E38]"] { background-color: #d66b55 !important; }
+[class*="hover:bg-[#A94C29]"]:hover { background-color: #bd5544 !important; }
+[class*="text-[#382923]"], [class*="text-[#4A3228]"] { color: #183b3a !important; }
+[class*="text-[#FFFDF9]"] { color: #ffffff !important; }
+[class*="border-amber"] { border-color: rgba(23, 76, 75, .16) !important; }
+[class*="bg-amber-100"], [class*="bg-amber-200"] { background-color: #dceee8 !important; }
+[class*="bg-amber-50"] { background-color: #eef6f2 !important; }
+[class*="text-amber-800"], [class*="text-amber-900"], [class*="text-amber-700"] { color: #23615d !important; }
+[class*="text-amber-200"], [class*="text-amber-300"] { color: #f6d2c4 !important; }
+[class*="bg-orange-200"] { background-color: #f5d0c3 !important; }
+[class*="bg-orange-100"] { background-color: #fbe9e2 !important; }
+[class*="text-orange-800"] { color: #a64e43 !important; }
+[class*="bg-emerald-100"] { background-color: #dceee8 !important; }
+[class*="text-emerald-800"], [class*="text-emerald-700"] { color: #23615d !important; }
